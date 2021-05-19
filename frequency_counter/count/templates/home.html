@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <title>Frequency Counter</title>
+</head>
+    <body>
+    <div class="container">
+        <h2>Frequency Counter</h2><br>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="url" id="new">Enter the URL</label>
+                <input type="url" name="url" id="url" placeholder="Url">
+            <input type = "submit" id="submit" value = "Submit">
+        </form>
+    </div>
+    </body>
+    <style>
+        .container{
+            width:1000px;
+            text-align: center;
+        }
+        #url{
+            width: 300px;
+            height: 40px;
+        }
+        #submit{
+            height:40px;
+        }
+    </style>
+</html>
